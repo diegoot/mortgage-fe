@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# About the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Other tools used are:
 
-In the project directory, you can run:
+- [React Final Form](https://final-form.org/react): for the form implementation
+- [Material UI](https://mui.com/): this helps with the UI
+- [mui-rff](https://www.npmjs.com/package/mui-rff): this helps to use MUI inputs with RFF
+- [Redux Toolkit](https://redux-toolkit.js.org/): as a state manager
 
-### `npm start`
+NOTA: for this simple app we do not need a state manager but I think it is simpler this way for example to share information between different calculator components, that is why I added.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to work locally
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- git clone https://github.com/diegoot/mortgage-fe.git
+- cd mortgage-fe
+- yarn install
+- yarn start
 
-### `npm test`
+If you want to run tests then `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Possible improvements
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- In the results page:
+  - show a table with all the payments the user will have to do
+  - show the total amount and how much of it is because of interests and insurance
+- Implement form validations with [Yup](https://www.npmjs.com/)
+- Improve out of the box dark mode contrasts (buttons look a bit weird to me)
+- Improve [limitations](https://github.com/mui/material-ui/issues/36264) for input type number, this prevented me to provided the desired user experience that I was looking for
+- Improve tests by properly mocking redux store

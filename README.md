@@ -18,6 +18,10 @@ NOTA: for this simple app we do not need a state manager but I think it is simpl
 - yarn install
 - yarn start
 
+You can now access the app at http://localhost:3000
+
+**IMPORTANT:** make sure to have the backend running at port 9000, thiss version of the API has it hardcoded.
+
 If you want to run tests then `yarn test`
 
 ## Possible improvements
@@ -29,3 +33,4 @@ If you want to run tests then `yarn test`
 - Improve out of the box dark mode contrasts (buttons look a bit weird to me)
 - Improve [limitations](https://github.com/mui/material-ui/issues/36264) for input type number, this prevented me to provided the desired user experience that I was looking for
 - Improve tests by properly mocking redux store
+- Add environment file to manage endpoints in different environments
